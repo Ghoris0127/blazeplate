@@ -1,7 +1,6 @@
 /*
     Controller for the 4x 7-segment display
 */
-//comment voor commit
 int digit1 = 13;
 int digit2 = 10;
 int digit3 = 9;
@@ -19,10 +18,10 @@ int DecimalPoint = 4;
 
 int counter = 0;
 
-int digit1Num = 2;
-int digit2Num = 5;
-int digit3Num = 3;
-int digit4Num = 4;
+int digit1Num = 9;
+int digit2Num = 9;
+int digit3Num = 9;
+int digit4Num = 9;
 
 unsigned long time = 0;
 
