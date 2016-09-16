@@ -1,7 +1,7 @@
 /*
     Controller for the 4x 7-segment display
 */
-
+//comment voor commit
 int digit1 = 13;
 int digit2 = 10;
 int digit3 = 9;
