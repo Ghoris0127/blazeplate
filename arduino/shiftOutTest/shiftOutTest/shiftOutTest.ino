@@ -19,15 +19,17 @@ int segmentD = 8;
 int segmentE = 16;
 int segmentF = 32;
 int segmentG = 64;
-
 int DecimalPoint = 128;
 
-int counter = 0;
+int display1digit1Num = 2;
+int display1digit2Num = 5;
+int display1digit3Num = 3;
+int display1digit4Num = 4;
 
-int digit1Num = 2;
-int digit2Num = 5;
-int digit3Num = 3;
-int digit4Num = 4;
+int display2digit1Num = 2;
+int display2digit2Num = 5;
+int display2digit3Num = 3;
+int display2digit4Num = 4;
 
 unsigned long time = 0;
 
