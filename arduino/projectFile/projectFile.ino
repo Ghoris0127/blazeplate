@@ -79,6 +79,7 @@ int currentChangePit = 1;
 int currentChangePitSave = 0;
 unsigned long led7Time;
 unsigned long led8Time;
+boolean alreadyOff = false;
 
 //initialises pins and their modes.
 void setup() {
@@ -125,6 +126,9 @@ void loop() {
       onOffButtonState = !onOffButtonState;
       Serial.println("hey this is button state: " + onOffButtonState);
       onOffButtonTime = millis();
+      if(onOffButtonState){
+        alreadyOff = false;
+      }
     }
   }
   onOffOldState = onOffNewState;
@@ -180,6 +184,11 @@ void loop() {
     display2Digit2Num = 0;
     display2Digit3Num = 0;
     display2Digit4Num = 0;
+    currentChangePit = 1;
+    if(!alreadyOff){
+      writeOutDisplays();
+      alreadyOff = true;
+    }
   }
 }
 
